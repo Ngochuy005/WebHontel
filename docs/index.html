@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Golden Hotel - Khách sạn Cao Cấp</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <div class="logo-text">Golden Hotel</div>
+                    <div class="logo-subtitle">Luxury & Comfort</div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm phòng, dịch vụ...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="user-actions">
+                <button class="btn btn-secondary">Đăng nhập</button>
+                <button class="btn btn-primary">Đăng ký</button>
+                <div class="icon-btn">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="icon-btn">
+                    <i class="fas fa-bookmark"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="#" class="nav-link">Trang chủ</a>
+            <a href="#" class="nav-link">Phòng nghỉ</a>
+            <a href="#" class="nav-link">Dịch vụ</a>
+            <a href="#" class="nav-link">Đặt phòng</a>
+            <a href="#" class="nav-link">Liên hệ</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="hero">
+            <img src="assets/backgroundhome.jpg" alt="Golden Hotel - Khách sạn cao cấp">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Golden Hotel</h1>
+                <p class="hero-subtitle">Trải nghiệm sang trọng - Dịch vụ hoàn hảo - Kỷ niệm khó quên</p>
+                <button class="hero-btn">Đặt phòng ngay</button>
+            </div>
+        </div>
+
+        <div class="badge-container">
+            <div class="location-badge">
+                <i class="fas fa-map-marker-alt"></i>
+                Trung tâm Tp. Hồ Chí Minh
+            </div>
+        </div>
+
+        <!-- Quick Booking -->
+        <section class="quick-booking">
+            <h2 class="section-title" style="color: white; margin-bottom: 1rem;">Đặt Phòng Nhanh</h2>
+            <p>Tìm và đặt phòng hoàn hảo cho chuyến đi của bạn</p>
+            <form class="booking-form">
+                <div class="form-group">
+                    <label>Ngày nhận phòng</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Ngày trả phòng</label>
+                    <input type="date" required>
+                </div>
+                <div class="form-group">
+                    <label>Loại phòng</label>
+                    <select required>
+                        <option value="">Chọn loại phòng</option>
+                        <option value="1">Phòng Tiêu Chuẩn - 1,000,000 VNĐ</option>
+                        <option value="2">Phòng Cao Cấp - 1,500,000 VNĐ</option>
+                        <option value="3">Phòng Suite - 2,500,000 VNĐ</option>
+                        <option value="4">Phòng Gia Đình - 2,000,000 VNĐ</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Số khách</label>
+                    <select required>
+                        <option value="">Chọn số khách</option>
+                        <option value="1">1 khách</option>
+                        <option value="2">2 khách</option>
+                        <option value="3">3 khách</option>
+                        <option value="4">4 khách</option>
+                        <option value="5">5 khách</option>
+                        <option value="6">6 khách</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="search-btn">Tìm phòng</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-brand">
+                    <h3>Golden Hotel</h3>
+                    <p>Trải nghiệm nghỉ dưỡng đẳng cấp tại trung tâm TP.HCM. Chúng tôi cam kết mang đến cho bạn những kỷ niệm khó quên với dịch vụ hoàn hảo và không gian sang trọng.</p>
+                    <div class="footer-social">
+                        <a href="#" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section footer-links">
+                    <h4><i class="fas fa-link"></i> Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="#"><i class="fas fa-home"></i> Trang chủ</a></li>
+                        <li><a href="#"><i class="fas fa-concierge-bell"></i> Dịch vụ</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i> Đánh giá</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4><i class="fas fa-phone"></i> Liên hệ</h4>
+                    <p><i class="fas fa-map-marker-alt"></i><span>1 Lê Lợi, Quận 1, TP.HCM</span></p>
+                    <p><i class="fas fa-phone"></i><span>(077) 546 3230</span></p>
+                    <p><i class="fas fa-envelope"></i><span>website@goldenhotel.vn</span></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Golden Hotel. Đã đăng ký bản quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Hero button
+        document.querySelector('.hero-btn').addEventListener('click', function() {
+            alert('Chức năng đặt phòng sẽ được triển khai trong phần backend!');
+        });
+
+        // Quick booking form
+        document.querySelector('.booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Form đặt phòng đã được gửi! Chức năng sẽ được kết nối với backend.');
+        });
+
+        // Search functionality
+        document.querySelector('.search-bar i').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-bar input').value;
+            if (searchTerm) {
+                alert(`Tìm kiếm: "${searchTerm}". Chức năng tìm kiếm sẽ được triển khai với backend.`);
+            }
+        });
+    </script>
+</body>
+</html>
