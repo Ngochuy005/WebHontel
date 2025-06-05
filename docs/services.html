@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Golden Hotel - Dịch vụ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        main {
+            padding: 3rem 0;
+        }
+        h1.section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #bfa14a;
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 2rem;
+        }
+        .services-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .service-card {
+            background: white;
+            flex: 1 1 300px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+        .service-card i {
+            font-size: 3.5rem;
+            color: #bfa14a;
+            margin-bottom: 1rem;
+        }
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #bfa14a;
+            margin-bottom: 1rem;
+            font-size: 1.7rem;
+        }
+        .service-card p {
+            color: #333;
+            font-size: 1.05rem;
+            line-height: 1.4;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgb(191 161 74 / 0.5);
+        }
+        @media (max-width: 768px) {
+            .services-grid {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <div>
+                    <div class="logo-text">Golden Hotel</div>
+                    <div class="logo-subtitle">Luxury & Comfort</div>
+                </div>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm dịch vụ...">
+                <i class="fas fa-search"></i>
+            </div>
+            <div class="user-actions">
+                <button class="btn btn-secondary">Đăng nhập</button>
+                <button class="btn btn-primary">Đăng ký</button>
+                <div class="icon-btn"><i class="fas fa-user"></i></div>
+                <div class="icon-btn"><i class="fas fa-bookmark"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container nav-container">
+            <a href="index.html" class="nav-link">Trang chủ</a>
+            <a href="rooms.html" class="nav-link">Phòng nghỉ</a>
+            <a href="service.html" class="nav-link">Dịch vụ</a>
+            <a href="booking.html" class="nav-link">Đặt phòng</a>
+            <a href="contact.html" class="nav-link">Liên hệ</a>
+        </div>
+    </nav>
+
+    <main class="container">
+        <h1 class="section-title">Dịch vụ của chúng tôi</h1>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-spa"></i>
+                <h3>Dịch vụ Spa</h3>
+                <p>Dịch vụ massage và chăm sóc sức khỏe</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-swimmer"></i>
+                <h3>Hồ Bơi</h3>
+                <p>Sử dụng hồ bơi không giới hạn</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-wifi"></i>
+                <h3>Wifi miễn phí</h3>
+                <p>Kết nối internet tốc độ cao mọi lúc mọi nơi trong khuôn viên khách sạn.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-utensils"></i>
+                <h3>Nhà Hàng</h3>
+                <p>Ăn sáng tự chọn tại nhà hàng</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-concierge-bell"></i>
+                <h3>Dịch Vụ Phòng</h3>
+                <p>Phục vụ đồ ăn và đồ uống tận phòng</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shuttle-van"></i>
+                <h3>Đưa Đón Sân Bay</h3>
+                <p>Dịch vụ xe đưa đón sân bay</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-tshirt"></i>
+                <h3>Giặt Ủi</h3>
+                <p>Dịch vụ giặt ủi và giặt khô</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-dumbbell"></i>
+                <h3>Phòng Gym</h3>
+                <p>Sử dụng phòng tập thể dục</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-map-marked-alt"></i>
+                <h3>Dịch Vụ Hướng Dẫn</h3>
+                <p>Hướng dẫn viên du lịch chuyên nghiệp</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-brand">
+                    <h3>Golden Hotel</h3>
+                    <p>Trải nghiệm nghỉ dưỡng đẳng cấp tại trung tâm TP.HCM. Chúng tôi cam kết mang đến cho bạn những kỷ niệm khó quên với dịch vụ hoàn hảo và không gian sang trọng.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section footer-links">
+                    <h4><i class="fas fa-link"></i> Liên kết nhanh</h4>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Trang chủ</a></li>
+                        <li><a href="service.html"><i class="fas fa-concierge-bell"></i> Dịch vụ</a></li>
+                        <li><a href="contact.html"><i class="fas fa-envelope"></i> Liên hệ</a></li>
+                        <li><a href="#"><i class="fas fa-star"></i> Đánh giá</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section footer-contact">
+                    <h4><i class="fas fa-phone"></i> Liên hệ</h4>
+                    <p><i class="fas fa-map-marker-alt"></i> 1 Lê Lợi, Quận 1, TP.HCM</p>
+                    <p><i class="fas fa-phone"></i> (077) 546 3230</p>
+                    <p><i class="fas fa-envelope"></i> website@goldenhotel.vn</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Golden Hotel. Đã đăng ký bản quyền.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelector('.search-bar i').addEventListener('click', function() {
+            const searchTerm = document.querySelector('.search-bar input').value;
+            if (searchTerm) {
+                alert(`Tìm kiếm: "${searchTerm}". Chức năng tìm kiếm sẽ được triển khai với backend.`);
+            }
+        });
+    </script>
+</body>
+</html>
