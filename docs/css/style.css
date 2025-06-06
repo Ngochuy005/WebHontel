@@ -25,7 +25,7 @@
 }
 
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Playfair Display', serif;
     background-color: var(--brown-50);
     color: var(--text-primary);
     line-height: 1.6;
@@ -59,7 +59,6 @@ header {
 }
 
 .logo-text {
-    font-family: 'Lora', serif;
     font-weight: 700;
     color: var(--brown-800);
     font-size: 1.9rem;
@@ -96,7 +95,7 @@ header {
     padding: 0.75rem 0.5rem;
     font-size: 0.95rem;
     color: var(--text-primary);
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Poppins', sans-serif;
     outline: none;
 }
 
@@ -244,6 +243,7 @@ nav {
 }
 
 .hero-overlay {
+    font-family: 'Pacifico', cursive;
     position: absolute;
     top: 0;
     left: 0;
@@ -259,7 +259,6 @@ nav {
 }
 
 .hero-title {
-    font-family: 'Playfair Display', serif;
     font-size: 4.5rem;
     font-weight: 700;
     color: var(--white);
@@ -269,7 +268,6 @@ nav {
 }
 
 .hero-subtitle {
-    font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     font-weight: 400;
     color: var(--white);
@@ -333,7 +331,7 @@ nav {
 
 
 .section-title {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--brown-800);
