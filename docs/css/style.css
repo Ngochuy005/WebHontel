@@ -306,7 +306,7 @@ nav {
 .badge-container {
   display: flex;
   justify-content: flex-end;
-  margin-top: -1rem; /* bớt âm lại một chút để hài hòa */
+  margin-top: -1rem;
   margin-bottom: 1.5rem;
   position: relative;
   z-index: 10;
@@ -384,7 +384,6 @@ nav {
     transition: all 0.3s ease;
 }
 
-/* Footer Styles - Đơn giản, hiện đại */
 .footer {
     background: linear-gradient(135deg, var(--brown-700), var(--brown-900));
     color: var(--white);
@@ -493,7 +492,64 @@ nav {
     color: var(--brown-200);
 }
 
-/* Responsive */
+main {
+    padding: 3rem 0;
+}
+
+h1.section-title {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--brown-800); 
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.service-card {
+    background: var(--white);
+    flex: 1 1 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px var(--shadow-md);
+    padding: 2rem;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.service-card i {
+    font-size: 3.5rem;
+    color: var(--brown-700);
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--brown-800);
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+}
+
+.service-card p {
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    line-height: 1.4;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgb(191 161 74 / 0.5);
+}
+
 @media (max-width: 900px) {
     .footer-container {
         flex-direction: column;
@@ -518,7 +574,6 @@ nav {
     }
 }
 
-/* Animation for fade in and ripple (for JS) */
 @keyframes fadeInUp {
     from { opacity: 0; transform: translateY(30px);}
     to { opacity: 1; transform: translateY(0);}
@@ -527,3 +582,4 @@ nav {
     from { width: 10px; height: 10px; opacity: 1;}
     to { width: 50px; height: 50px; opacity: 0;}
 }
+

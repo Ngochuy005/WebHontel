@@ -7,64 +7,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <style>
-        main {
-            padding: 3rem 0;
-        }
-        h1.section-title {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            color: #bfa14a;
-            text-align: center;
-            font-size: 2.8rem;
-            margin-bottom: 2rem;
-        }
-        .services-grid {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 2rem;
-            justify-content: center;
-            max-width: 1100px;
-            margin: 0 auto;
-        }
-        .service-card {
-            background: white;
-            flex: 1 1 300px;
-            border-radius: 12px;
-            box-shadow: 0 4px 8px rgb(0 0 0 / 0.1);
-            padding: 2rem;
-            text-align: center;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            cursor: pointer;
-        }
-        .service-card i {
-            font-size: 3.5rem;
-            color: #bfa14a;
-            margin-bottom: 1rem;
-        }
-        .service-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
-            color: #bfa14a;
-            margin-bottom: 1rem;
-            font-size: 1.7rem;
-        }
-        .service-card p {
-            color: #333;
-            font-size: 1.05rem;
-            line-height: 1.4;
-        }
-        .service-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 12px 24px rgb(191 161 74 / 0.5);
-        }
-        @media (max-width: 768px) {
-            .services-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -188,14 +130,6 @@
             </div>
         </div>
     </footer>
-
-    <script>
-        document.querySelector('.search-bar i').addEventListener('click', function() {
-            const searchTerm = document.querySelector('.search-bar input').value;
-            if (searchTerm) {
-                alert(`Tìm kiếm: "${searchTerm}". Chức năng tìm kiếm sẽ được triển khai với backend.`);
-            }
-        });
-    </script>
+    <script src="js/button.js"></script>
 </body>
 </html>
