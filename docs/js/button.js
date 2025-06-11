@@ -1,3 +1,4 @@
+
 // ===== JS từ index.html =====
 
 // Smooth scrolling for navigation links (index.html)
